@@ -1,0 +1,81 @@
+/* Reset moderno baseado em "A Modern CSS Reset" — Andy Bell
+	 Fonte de referência: Andy Bell (A Modern CSS Reset)
+
+	 Objetivo: remover inconsistências entre navegadores e fornecer
+	 uma base consistente e moderna para estilos.
+*/
+
+:root {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+/* Box sizing global */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+/* Altura mínima e fluidez do documento */
+html, body, #root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	-moz-tab-size: 4;
+	tab-size: 4;
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	color: inherit;
+	background: transparent;
+}
+
+/* Remover padding padrão de listas quando possuem classe (útil para componentes) */
+ul[class], ol[class] {
+	padding: 0;
+}
+
+/* Links sem classe têm melhor quebra do sublinhado */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Tornar mídias respnsivas e sem espaços brancos indesejados */
+img, picture, video, canvas, svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Inputs e controles herdam fonte para consistência */
+input, button, textarea, select {
+	font: inherit;
+}
+
+/* Quebra de palavras para headings e parágrafos longos */
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* Isolamento para evitar que efeitos como mix-blend afetem o resto da página */
+#root, #app {
+	isolation: isolate;
+}
+
+/* Elementos com hidden devem ficar realmente ocultos */
+[hidden] {
+	display: none !important;
+}
+
+/* Limpeza final: força estilos básicos coerentes */
+strong {
+	font-weight: 600;
+}
+
+/* Espaçamento vertical consistente entre blocos dentro de artigos */
+article > * + * {
+	margin-top: 1em;
+}
+
