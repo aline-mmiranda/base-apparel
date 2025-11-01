@@ -7,26 +7,29 @@ body {
 
 .container {
     max-width: 1440px;
+    min-width: 375px;
     height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
 }
 
 .container-principal {
     background: url('../images/bg-pattern-desktop.svg') no-repeat;
     background-size: cover;
     width: 100%;
-    padding: 65px 220px 165px 165px;
 }
 
 .info-principal {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 445px;
+    margin: 65px auto;
 }
 
 .logo-container {
+    width: 100%;
     margin-bottom: 133px;
 }
 
@@ -65,6 +68,7 @@ body {
     display: flex;
     position: relative;
     max-height: 55px;
+    width: 100%;
     height: 100%;
 }
 
@@ -102,11 +106,12 @@ body {
 }
 
 .image-principal {
-    width: 610px;
+    max-width: 610px;
     width: 100%;
 }
 
 .image-principal img {
+    max-width: 610px;
     width: 100%;
     height: 100%;
     object-fit: cover;

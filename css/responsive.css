@@ -1,4 +1,10 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
+    .info-principal {
+        margin: 65px 35px;
+    }
+}
+
+@media screen and (max-width: 576px) {
     .container {
         flex-direction: column;
         position: relative;
@@ -6,19 +12,16 @@
 
     .container-principal {
         background: none;
-        padding: 30px 30px 95px 30px;
     }
 
     .info-principal {
         align-items: center;
         max-width: 600px;
-        min-width: 310px;
-        ;
     }
 
     .logo-container {
         width: 100%;
-        margin-bottom: 348px;
+        margin-bottom: 345px;
     }
 
     .logo-container img {
@@ -53,13 +56,17 @@
     }
 
     .image-principal {
-        max-width: 100%;
-        max-height: 250px;
         position: absolute;
-        transform: translateY(85px);
+        transform: translateY(135px);
     }
 
     .image-principal img {
         content: url('../images/hero-mobile.jpg');
+        max-width: 576px;
+        width: 100%;
+        max-height: 250px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
     }
 }
