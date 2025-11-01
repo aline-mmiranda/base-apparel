@@ -16,17 +16,17 @@ body {
 .container-principal {
     background: url('../images/bg-pattern-desktop.svg') no-repeat;
     background-size: cover;
+    width: 100%;
     padding: 65px 220px 165px 165px;
 }
 
 .info-principal {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    margin: 0 auto;
 }
 
 .logo-container {
-    width: 100%;
     margin-bottom: 133px;
 }
 
@@ -72,7 +72,7 @@ body {
     width: 100%;
     border: 1px solid var(--color-primary-soft);
     border-radius: 30px;
-    padding: 20px 30px;
+    padding: 20px 130px 20px 30px;
 }
 
 .email-container .email::placeholder {
@@ -102,11 +102,12 @@ body {
 }
 
 .image-principal {
-    max-width: 610px;
+    width: 610px;
     width: 100%;
 }
 
 .image-principal img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }

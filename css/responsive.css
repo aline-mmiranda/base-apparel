@@ -1,0 +1,65 @@
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .container-principal {
+        background: none;
+        padding: 30px 30px 95px 30px;
+    }
+
+    .info-principal {
+        align-items: center;
+        max-width: 600px;
+        min-width: 310px;
+        ;
+    }
+
+    .logo-container {
+        width: 100%;
+        margin-bottom: 348px;
+    }
+
+    .logo-container img {
+        max-width: 100px;
+    }
+
+    .info-container {
+        text-align: center;
+        gap: 16px;
+    }
+
+    .info-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .email-container {
+        width: 100%;
+        max-height: 45px;
+    }
+
+    .email-container .email {
+        padding: 15px 125px 15px 25px;
+    }
+
+    .email-container .email::placeholder {
+        font: 400 0.875rem var(--font-principal);
+        color: var(--color-primary-soft);
+    }
+
+    .email-container .btn {
+        max-width: 65px;
+    }
+
+    .image-principal {
+        max-width: 100%;
+        max-height: 250px;
+        position: absolute;
+        transform: translateY(85px);
+    }
+
+    .image-principal img {
+        content: url('../images/hero-mobile.jpg');
+    }
+}
